@@ -28,7 +28,7 @@ email.addEventListener('input', function ()
 const telephoneNumber = document.querySelector('#tel');
 const telephoneNumberError = document.querySelector('.tel-error');
 telephoneNumber.addEventListener('input', function () {
-    if (PHONE_NUMBER_PATTERN.test(telephoneNumber.value)) 
+    if (PHONE_NUMBER_REGEX.test(telephoneNumber.value)) 
     {
         telephoneNumberError.textContent = "";
     }
