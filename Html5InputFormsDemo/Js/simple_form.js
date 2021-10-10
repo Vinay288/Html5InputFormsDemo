@@ -1,6 +1,8 @@
 const NAME_REGEX = RegExp('^[A-Z]{1}[a-z]{2,}$');
 const EMAIL_REGEX = RegExp("^[a-z]+[+._-]?[a-z0-9]+[@][a-z0-9]+[.][a-z]([.][a-z]+)?$");
 const PHONE_NUMBER_REGEX = RegExp("^[0-9]{2}[ ][0-9]{10}$");
+const PASSWORD_REGEX = RegExp("^(?=.{8,}$)(?=.*[A-Z])(?=.*[0-9])[0-9a-zA-Z]*[@#$%][0-9a-zA-Z]*$");
+
 const text = document.querySelector('#text');
 const textError = document.querySelector('.text-error');
 text.addEventListener('input', function () {
