@@ -6,36 +6,40 @@ const PASSWORD_REGEX = RegExp("^(?=.{8,}$)(?=.*[A-Z])(?=.*[0-9])[0-9a-zA-Z]*[@#$
 const text = document.querySelector('#text');
 const textError = document.querySelector('.text-error');
 text.addEventListener('input', function () {
-    if (NAME_REGEX.test(text.value)) 
-    {
+    if (NAME_REGEX.test(text.value)) {
         textError.textContent = "";
     }
-    else 
-    {
+    else {
         textError.textContent = "Name is Incorrect";
     }
 });
 const email = document.querySelector('#email');
 const emailError = document.querySelector('.email-error');
-email.addEventListener('input', function () 
-    {
+email.addEventListener('input', function () {
     if (EMAIL_REGEX.test(email.value)) {
         emailError.textContent = "";
     }
-    else 
-    {
+    else {
         emailError.textContent = "Email is Incorrect";
     }
 });
 const telephoneNumber = document.querySelector('#tel');
 const telephoneNumberError = document.querySelector('.tel-error');
 telephoneNumber.addEventListener('input', function () {
-    if (PHONE_NUMBER_REGEX.test(telephoneNumber.value)) 
-    {
+    if (PHONE_NUMBER_REGEX.test(telephoneNumber.value)) {
         telephoneNumberError.textContent = "";
     }
-    else 
-    {
+    else {
         telephoneNumberError.textContent = "telephone number is Incorrect";
+    }
+});
+const password = document.querySelector('#pwd');
+const passwordError = document.querySelector('.pwd-error');
+password.addEventListener('input', function () {
+    if (PASSWORD_PATERN.test(password.value)) {
+        passwordError.textContent = "";
+    }
+    else {
+        passwordError.textContent = "Password is Incorrect";
     }
 });
