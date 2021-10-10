@@ -64,3 +64,30 @@ error-output
     font-style: italic;
     color: red;
 }
+ 
+@media only screen and (max-width:300px) 
+{
+    h1
+    {
+        font-size: 40px;
+        text-align: center;
+    }
+    label
+    {
+        display: inline;
+        width: 100px;
+        
+    }
+    .nativeDateTimePicker
+    {
+        width: 100%;
+    }
+    input
+    {
+        width: 100%;
+        border: 1px solid black
+    }
+   form{
+       background-color: lightblue;
+   }
+}
