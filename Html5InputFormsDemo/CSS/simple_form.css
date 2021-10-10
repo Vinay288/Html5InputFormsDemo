@@ -2,6 +2,9 @@ html,input
 {
     font-family: sans-serif;
 }
+form{
+    background-color: deepskyblue;
+}
 
 body
 {
@@ -41,16 +44,17 @@ label,input,button
 label
 {
     text-align: right;
-    width: 30%;
+    width: 25%;
     margin-right: 2%;
 }
 
 input
 {
     flex: auto;
+    margin-right: 5%;
 }
 button{
-    width: 70%;
+    width: 20%;
     margin: 0 auto;
 }
 
